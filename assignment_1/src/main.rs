@@ -18,6 +18,10 @@ fn main() {
 
     // Convert tempurature and next 5 degrees to Celsius
     println!("{} Fahrenheit is {} Celsius", temp, fahrenheit_to_celsius(temp));
+    // Convert original temp form Celsius to the fahrenheit
+    let temp_c = fahrenheit_to_celsius(temp);
+    println!("{} Celsuis is {} Fahrenheit", temp_c, celsius_to_fahrenheit(temp_c));
+    // Loop through next 5 temperatures
     for _ in 0..5 {
         temp = temp + 1.0;
         println!("{} Fahrenheit is {} Celsius", temp, fahrenheit_to_celsius(temp));
