@@ -1,8 +1,9 @@
 
 //#[allow(unused_variables, unused_mut)]
 fn sum(total: &mut i32, low: i32, high: i32) {
-    // Write your code here!
+    // Dereferences the mutble variable total and sets to 0
     *total = 0;
+    // Iterates from low to high (inclusive) and adds to total
     for i in low..=high {
         *total += i;
     }

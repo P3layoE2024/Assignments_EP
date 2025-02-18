@@ -1,5 +1,6 @@
 
 fn clone_and_modify(s: &String) -> String {
+    // Creates a clone of s and adds "World"
     s.clone() + "World!"
 }
 
